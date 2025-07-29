@@ -8,7 +8,7 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'Quiz-app',
+  title: 'Quizz-app',
   description: 'Quiz desarrollado con Next.js, Tailwind v4 y Zustand',
 }
 
