@@ -6,9 +6,9 @@ import Game from "@/components/Game";
 
 
 //esta page.tsx que trae Next es como App.tsx de Vite
-//https://www.youtube.com/watch?v=p2wF2wRjcN0 qued en 1 hora 2 min
+//https://www.youtube.com/watch?v=p2wF2wRjcN0 qued en 1 hora 22 min
 //https://chatgpt.com/c/687aa580-fca8-800e-92a2-d284da179435
-
+//https://chatgpt.com/c/68889d96-3cc0-800e-992f-51d6c47a5be1
 
 const Page = () => {
   const questions = useQuestionsStore(state=> state.questions)
