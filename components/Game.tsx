@@ -32,7 +32,7 @@ const Question = ({ info }: { info: QuestionType }) => {
   return (
     <>
       <article
-        className="w-[380px] lg:w-[460px] lg:h-[430px] md:w-[460px] md:h-[430px]
+        className="w-[380px] lg:w-[460px] lg:max-h-[4300px] md:w-[460px] md:max-h-[430px]
     flex flex-col gap-y-2 justify-start items-center bg-gray-800  border-gray-300 border-[1px] text-gray-300 rounded-md" 
       >
         <div className="p-3">{info.question}</div>
