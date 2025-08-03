@@ -32,12 +32,12 @@ const Question = ({ info }: { info: QuestionType }) => {
   return (
     <>
       <article
-        className="w-[460px] h-[430px] border-gray-300 border-[1px] text-gray-300 rounded-md
-    flex flex-col gap-y-2 justify-start items-center bg-gray-800"
+        className="w-[380px] lg:w-[460px] lg:h-[430px] md:w-[460px] md:h-[430px]
+    flex flex-col gap-y-2 justify-start items-center bg-gray-800  border-gray-300 border-[1px] text-gray-300 rounded-md" 
       >
         <div className="p-3">{info.question}</div>
 
-        <div className="w-[430px]">
+        <div className="w-[370px] lg:w-[430px] md:w-[430px]">
           <SyntaxHighlighter language="javascript" style={gradientDark}>
             {info.code}
           </SyntaxHighlighter>
@@ -51,8 +51,8 @@ const Question = ({ info }: { info: QuestionType }) => {
               className={`${getBackgroundColor(
                 info,
                 index
-              )} cursor-pointer p-5 w-[430px] bg-gray-700 hover:bg-gray-600 h-[48px]
-          border-b-[1px] border-gray-600
+              )} cursor-pointer p-5 w-[370px] lg:w-[430px] md:w-[430px] 
+          border-b-[1px] border-gray-600 bg-gray-700 hover:bg-gray-600 h-[48px]
           flex items-center`}
               onClick={createHandleClick(index)}
             >

@@ -17,8 +17,8 @@ const Footer = () => {
   <FaQuestion className="inline text-yellow-500" /> {unanswered} sin responder
 </article>
 
-      <div className="mt-[16px]">
-        <button onClick={() => reset()} className="cursor-pointer hover:text-gray-400">
+      <div className="mt-[16px] flex justify-center text-[19px]">
+        <button onClick={() => reset()} className="cursor-pointer text-blue-400 hover:text-gray-400 font-semibold">
           Resetear juego
         </button>
       </div>

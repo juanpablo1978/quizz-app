@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { persist, devtools } from "zustand/middleware";
 import { Question } from "@/types";
 
 interface State {
@@ -12,7 +12,7 @@ interface State {
   reset: () => void;
 }
 
-export const useQuestionsStore = create<State>()(
+export const useQuestionsStore = create<State>()(devtools(
   persist(
     (set, get) => ({
       questions: [],
@@ -65,4 +65,4 @@ export const useQuestionsStore = create<State>()(
       name: "questions", // clave del localStorage
     }
   )
-);
+));
